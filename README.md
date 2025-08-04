@@ -1,6 +1,6 @@
 # open.nvim
 
-A simple Neovim plugin that lets you search Google directly from your editor with a custom `:SearchGoogle` command. Works across macOS, Linux, and Windows (including WSL).
+A simple Neovim plugin that lets you search Google directly from your editor with a custom `:GoogleSearch` command. Works across macOS, Linux, and Windows (including WSL).
 
 More features coming soon!
 
@@ -45,6 +45,14 @@ use {
 ```sh
 :SearchGoogle your search terms here
 ```
+
+or create a mapping:
+
+```lua
+vim.keymap.set("n", "<leader>gs", ":GoogleSearch ", { noremap = true, desc = "Google Search in Browser" })
+```
+
+---
 
 ## Requirements
 

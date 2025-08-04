@@ -44,7 +44,7 @@ function M.search_google(query)
 end
 
 function M.setup()
-	vim.api.nvim_create_user_command("SearchGoogle", function(opts)
+	vim.api.nvim_create_user_command("GoogleSearch", function(opts)
 		local query = table.concat(opts.fargs, " ")
 		if query == "" then
 			print("Please enter a search query.")

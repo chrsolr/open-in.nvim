@@ -25,7 +25,7 @@ function M.search_google(query)
 		elseif executable_exists("xdg-open") then
 			cmd = string.format('xdg-open "%s" &', url)
 		else
-			print("❌ No browser found.")
+			print("No browser found.")
 			return
 		end
 	elseif uname == "Windows_NT" then
@@ -36,7 +36,7 @@ function M.search_google(query)
 			cmd = string.format('start "" "%s"', url)
 		end
 	else
-		print("❌ Unsupported OS: " .. uname)
+		print("Unsupported OS: " .. uname)
 		return
 	end
 
@@ -47,7 +47,7 @@ function M.setup()
 	vim.api.nvim_create_user_command("SearchGoogle", function(opts)
 		local query = table.concat(opts.fargs, " ")
 		if query == "" then
-			print("❌ Please enter a search query.")
+			print("Please enter a search query.")
 			return
 		end
 		M.search_google(query)

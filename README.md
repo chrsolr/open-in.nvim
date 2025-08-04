@@ -67,7 +67,7 @@ or create a mapping:
 
 ```lua
 vim.keymap.set("n", "<leader>gs", ":GoogleSearch ", { noremap = true, desc = "Search Google in browser" })
-vim.keymap.set("n", "<leader>ofe", ":OpenFileExplorer ", { noremap = true, desc = "Open file in file explorer" })
+vim.keymap.set("n", "<leader>oie", ":OpenInExplorer<CR>", { noremap = true, desc = "Open file in file explorer" })
 ```
 
 ---

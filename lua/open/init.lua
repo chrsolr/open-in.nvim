@@ -1,11 +1,11 @@
 local M = {}
 
 function M.setup()
-	require("open.google-search").setup()
+  require("open.commands").setmp()
 
-	-- Other modules ideas:
-	-- require("open.folder").setup()
-	-- require("open.file").setup()
+  -- Other modules ideas:
+  -- require("open.folder").setup()
+  -- require("open.file").setup()
 end
 
 return M

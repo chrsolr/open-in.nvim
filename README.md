@@ -1,6 +1,8 @@
 # open.nvim
 
-A simple Neovim plugin that lets you search Google directly from your editor with a custom `:GoogleSearch` command. Works across macOS, Linux, and Windows (including WSL).
+Open your browser or file explorer — all from Neovim.
+
+open.nvim is a lightweight Neovim plugin that helps you jump from code to context. Whether you want to Google a term or open your file's directory, this plugin lets you do it instantly — in your default browser or native file explorer.
 
 More features coming soon!
 

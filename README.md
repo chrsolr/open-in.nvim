@@ -33,7 +33,7 @@ Use your favorite plugin manager.
 {
   "chrsolr/open-in.nvim",
   config = function()
-    require("open").setup()
+    require("open-in").setup()
   end,
 }
 
@@ -42,7 +42,7 @@ Use your favorite plugin manager.
 use {
   "chrsolr/open-in.nvim",
   config = function()
-    require("open").setup()
+    require("open-in").setup()
   end,
 }
 ```

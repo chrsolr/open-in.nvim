@@ -11,7 +11,7 @@ function M.setup()
       return
     end
 
-    gs.search(query)
+    gs.google_search(query)
   end, {
     nargs = "+",
     complete = "file",

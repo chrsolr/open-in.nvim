@@ -1,10 +1,10 @@
 local M = {}
 
-function M.search(query)
+function M.google_search(query)
   local encoded = query:gsub(" ", "+")
   local url = "https://www.google.com/search?q=" .. encoded
 
-  local uname = vim.loop.os_uname().smsname
+  local uname = vim.loop.os_uname().sysname
   local cmd = nil
 
   local function executable_exists(cmd)

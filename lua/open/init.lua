@@ -1,7 +1,7 @@
 local M = {}
 
 function M.setup()
-  require("open.commands").setmp()
+  require("open.commands").setup()
 
   -- Other modules ideas:
   -- require("open.folder").setup()

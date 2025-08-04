@@ -8,12 +8,17 @@ More features coming soon!
 
 ## Features
 
+### Google Search
 - Open a Google search for any query from Neovim.
 - Cross-platform support:
-  - macOS (`open`, with optional Google Chrome support)
-  - Linux (`google-chrome`, `chromium`, or `xdg-open`)
-  - Windows & WSL (`start` / `cmd.exe`)
+  - macOS, Linux, Windows & WSL
 - Minimal dependencies. Just needs a web browser.
+
+### Open File Explorer
+- Open the current file's directory in the file explorer.
+- Cross-platform support:
+  - macOS, Linux, Windows & WSL
+
 
 ---
 
@@ -40,16 +45,29 @@ use {
 }
 ```
 
-## Usage
+## Commands
 
-```sh
-:SearchGoogle your search terms here
+### GoogleSearch
+
+Open a Google search for any query from Neovim.
+
+```lua
+:GoogleSearch your search terms here
+```
+
+### OpenFileExplorer
+
+Open the current file's directory in the file explorer.
+
+```lua
+:OpenFileExplorer
 ```
 
 or create a mapping:
 
 ```lua
-vim.keymap.set("n", "<leader>gs", ":GoogleSearch ", { noremap = true, desc = "Google Search in Browser" })
+vim.keymap.set("n", "<leader>gs", ":GoogleSearch ", { noremap = true, desc = "Search Google in browser" })
+vim.keymap.set("n", "<leader>ofe", ":OpenFileExplorer ", { noremap = true, desc = "Open file in file explorer" })
 ```
 
 ---

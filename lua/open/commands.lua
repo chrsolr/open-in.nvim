@@ -2,6 +2,7 @@ local M = {}
 
 function M.setup()
   local gs = require("open.google-search")
+  local oie = require("open.file_explorer")
 
   vim.api.nvim_create_user_command("GoogleSearch", function(opts)
     local query = table.concat(opts.fargs, " ")
@@ -16,6 +17,8 @@ function M.setup()
     nargs = "+",
     complete = "file",
   })
+
+  vim.api.nvim_create_user_command("OpenInExplorer", oie.file_explorer, {})
 end
 
 return M

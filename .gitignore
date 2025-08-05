@@ -39,5 +39,45 @@ luac.out
 *.x86_64
 *.hex
 
-# Others
+# macOS
 **/.DS_Store
+
+# Node/npm
+node_modules/
+
+# Logs
+*.log
+
+# VS Code
+.vscode/
+
+# JetBrains IDEs (WebStorm, IntelliJ, etc.)
+.idea/
+
+# Sublime Text
+*.sublime-workspace
+*.sublime-project
+
+# Vim
+*.swp
+*.swo
+
+# Emacs
+*~
+
+# Eclipse
+.project
+.classpath
+.settings/
+
+# NetBeans
+nbproject/
+
+# Mac Finder & Spotlight
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Thumbnails
+ehthumbs.db
+Thumbs.db
